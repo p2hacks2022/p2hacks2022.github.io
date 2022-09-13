@@ -1,3 +1,4 @@
+applyRandomHeroBackgroundColor();
 countDown();
 setInterval(countDown,1000);
 
@@ -19,4 +20,29 @@ function countDown() {
     hour.innerHTML = calcHour < 10 ? '0' + calcHour : calcHour;
     min.innerHTML = calcMin < 10 ? '0' + calcMin : calcMin;
     sec.innerHTML = calcSec < 10 ? '0' + calcSec : calcSec;
+}
+
+function applyRandomHeroBackgroundColor(){
+    const hero = document.getElementsByClassName("hero-image");
+    switch(getRandomInt(8)){
+        case 0:
+            hero[0].classList.add("hero-red-bg");
+            break;
+        case 1:
+            hero[0].classList.add("hero-green-bg");
+            break;
+        case 2:
+            hero[0].classList.add("hero-blue-bg");
+            break;
+        case 3:
+            hero[0].classList.add("hero-purple-bg");
+            break;
+        default:
+            hero[0].classList.add("hero-black-bg");
+            break;
+    }
+}
+
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
 }
