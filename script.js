@@ -8,10 +8,10 @@ function countDown() {
     const min = document.getElementById("min");
     const sec = document.getElementById("sec");
     const now = new Date();
-    const openTime = new Date(2022, 11, 1, 0)
-    const diff = openTime.getTime() - now.getTime();
+    const openTime = new Date(2022, 8, 14, 0)
+    const diff = Math.max(openTime.getTime() - now.getTime(),0);
 
-    const calcDay = Math.floor(diff / 1000 / 60 / 60 / 60);
+    const calcDay = Math.floor(diff / 1000 / 60 / 60 / 24);
     const calcHour = Math.floor(diff / 1000 / 60 / 60) % 24;
     const calcMin = Math.floor(diff / 1000 / 60) % 60;
     const calcSec = Math.floor(diff / 1000) % 60;
