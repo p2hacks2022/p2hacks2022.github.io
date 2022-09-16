@@ -8,7 +8,7 @@ function countDown() {
     const min = document.getElementById("min");
     const sec = document.getElementById("sec");
     const now = new Date();
-    const openTime = new Date(2022, 8, 14, 0)
+    const openTime = new Date(2022, 9, 10, 18)
     const diff = Math.max(openTime.getTime() - now.getTime(),0);
 
     const calcDay = Math.floor(diff / 1000 / 60 / 60 / 24);
