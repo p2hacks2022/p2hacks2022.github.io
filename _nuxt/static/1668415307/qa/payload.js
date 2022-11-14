@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/qa", {data:[{}],fetch:{},mutations:void 0});
