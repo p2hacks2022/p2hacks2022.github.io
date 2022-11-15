@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/", (function(a,b){return {data:[{}],fetch:{"data-v-0e683b8c:0":{days:a,diff:a,timer:a,countDownTimer:{days:a,hours:a,minutes:a,seconds:a},heroBgColor:{"0":"BLACK","1":"RED","2":"GREEN","3":"BLUE","4":"PURPLE",BLACK:a,RED:b,GREEN:2,BLUE:3,PURPLE:4},bgColor:b}},mutations:void 0}}(0,1)));
